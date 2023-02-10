@@ -1,4 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-<div></div>
+<div class="main_students">
+    
+    <form action="">
+
+
+    </form>
+    {% for student in students_object %}
+    <form action="/courses/{{student.tid}}">
+    <button>{{student.tid}}. {{student.name}} {{student.email}}</button>
+    <input type="hidden" name="student" value="{{student.tid}}">
+    </form>
+    {% endfor %}
+
+</div>
 {% endblock %}

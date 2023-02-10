@@ -1,1 +1,4 @@
-<div>{{student_name}} {{course_names}}</div>
+<div>{{course_student}}</div>
+{% for course in courses %}
+<div>{{course.name}}</div>
+{% endfor %}
